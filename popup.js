@@ -1,7 +1,7 @@
 function click(e) {
   var value = document.querySelectorAll('input')[0].value;
   chrome.tabs.executeScript(null,
-      {code:"document.body.style.backgroundColor='" + value + "'"});
+      {code:"document.body.style.fontFamily='" + value + "'"});
   window.close();
 }
 
